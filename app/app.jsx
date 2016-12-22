@@ -1,18 +1,12 @@
 var React = require('react');
-var ReactDOM = require('react-dom')
-
-var objOne = {
-	name: 'Jonathan',
-	location: 'Redwood City'
-};
-
-var ObjTwo = {
-	age: 31,
-	...objOne
-};
-console.log(ObjTwo);
+var ReactDOM = require('react-dom');
+var Display = require('Display');
+var Input = require('Input');
 
 ReactDOM.render(
-	<h1> Boilerplate app!</h1>,
+	<div>
+		<h1>React Markdown Previewer </h1>
+		<Display/>
+	</div>,
 	document.getElementById('app')
 );

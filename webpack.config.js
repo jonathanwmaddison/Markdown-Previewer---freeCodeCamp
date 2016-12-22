@@ -7,6 +7,8 @@ module.exports = {
 	resolve: {
 		root: __dirname,
 		alias: {
+			Display: 'app/components/markdownDisplay.jsx',
+			Input: 'app/components/markdownInput.jsx',
 		},
 		extensions: ["", ".js", ".jsx"]
 	},
@@ -21,5 +23,6 @@ module.exports = {
 				exclude: /(node_modules|bower_components)/
 			}
 		]
-	}
+	},
+	devtool: 'cheap-module-eval-source-map'
 };
